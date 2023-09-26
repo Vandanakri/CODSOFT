@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.calculator {
+  margin-top: 8rem;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.cal-b {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  background-color: rgb(71, 71, 245);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.cal-b > button {
+  background-color: rgb(2, 2, 137);
+  margin: 1rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 3rem;
+  outline: none;
+  color: #ffffff;
+}
+
+.cal-b > button:hover {
+  cursor: pointer;
+  background-color: rgb(254, 254, 255);
+  color: black;
+}
+
+input {
+  grid-column: span 4;
+  text-align: right;
+  font-size: 2rem;
+  margin-top: 1rem;
+  border-radius: .3rem;
+  border: none;
+}
